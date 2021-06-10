@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2021 at 04:34 PM
+-- Generation Time: Jun 10, 2021 at 02:50 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -43,7 +43,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `admin_name`, `user_role`, `admin_email`, `admin_password`, `date_added`, `is_active`, `login_time`, `logoff_time`) VALUES
-(1, 'admin', 'Admin', 'admin@gmail.com', 'e64b78fc3bc91bcbc7dc232ba8ec59e0', '2021-06-09 06:51:50', 'Y', '2021-06-09 22:03:44', '2021-06-09 22:03:50'),
+(1, 'admin', 'Admin', 'admin@gmail.com', 'e64b78fc3bc91bcbc7dc232ba8ec59e0', '2021-06-09 06:51:50', 'Y', '2021-06-10 08:05:01', '2021-06-10 08:20:05'),
 (12, 'user', 'User', 'user@gmail.com', '5a30c9609b52fe348fb6925896e061de', '2021-06-09 06:51:50', 'Y', '2021-06-09 22:03:57', '2021-06-09 22:04:07');
 
 -- --------------------------------------------------------
@@ -64,8 +64,8 @@ CREATE TABLE `tbl_category` (
 --
 
 INSERT INTO `tbl_category` (`id`, `name`, `icon`, `added_by`) VALUES
-(1, 'Category 1', '1623243977marguerite-729510__340.jpg', 1),
-(2, 'category 2', '1623245862marguerite-729510__340.jpg', 1);
+(1, 'Category 1', '1623293383Daisy_pollen_flower_220533.jpg', 1),
+(2, 'category 2', '1623293337download.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -88,8 +88,8 @@ CREATE TABLE `tbl_product` (
 --
 
 INSERT INTO `tbl_product` (`id`, `category_id`, `name`, `description`, `price`, `image`, `added_by`) VALUES
-(5, '1,2', 'Product 1', '<p>This is test message</p>', 12.00, '1623246451marguerite-729510__340.jpg', 1),
-(6, '2', 'Product 2', '<h3>This is <em><strong>test </strong></em>description</h3>', 100.00, '1623249360marguerite-729510__340.jpg', 1);
+(5, '1,2', 'Product 1', '<p>This is test message</p>', 12.00, '1623293135Daisy_pollen_flower_220533.jpg', 1),
+(6, '2', 'Product 2', '<h3>This is <em><strong>test </strong></em>description</h3>', 100.00, '1623293194marguerite-729510__340.jpg', 1);
 
 --
 -- Indexes for dumped tables
@@ -126,12 +126,12 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
